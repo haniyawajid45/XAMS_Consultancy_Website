@@ -1,0 +1,6 @@
+{
+  "name": "XAMS Consultancy Services",
+  "description": "Professional aviation and ISO standards consultancy services including certification, quality assurance setup, audits, compliance check, and HR development.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
