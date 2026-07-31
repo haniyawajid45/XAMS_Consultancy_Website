@@ -10,14 +10,16 @@ import zameerImg from "../assets/images/zameer.jfif";
 import iftikharImg from "../assets/images/iftikar.jfif";
 import xainImg from "../assets/images/xain.jfif";
 import raziImg from "../assets/images/razi.jpg";
+import zarafshanImg from "../assets/images/zarafshan.jpeg";
 
 export default function Team() {
-  const [activeTab, setActiveTab] = useState<{ [key: string]: "credentials" | "experience" | "contact" }>({
-    "ceo-zameer": "credentials",
-    "psych-razi": "credentials",
-    "ops-iftikhar": "credentials",
-    "it-xain": "credentials",
-  });
+const [activeTab, setActiveTab] = useState<{ [key: string]: "credentials" | "experience" | "contact" }>({
+  "ceo-zameer": "credentials",
+  "psych-razi": "credentials",
+  "psych-zarafshan": "credentials",
+  "ops-iftikhar": "credentials",
+  "it-xain": "credentials",
+});
 
   const toggleTab = (memberId: string, tab: "credentials" | "experience" | "contact") => {
     setActiveTab((prev) => ({ ...prev, [memberId]: tab }));
@@ -56,11 +58,31 @@ export default function Team() {
         "Over 20 Years of University Teaching & Counselling Experience"
       ],
       experience: "Prof. Dr. Razi Sultan Siddiqui serves as Associate Dean (Faculty of Humanities & Social Sciences), Head of Department of Psychology, and Director of Student Counselling & Development at DHA Suffa University. With over 20 years of higher education experience, he specializes in psychological assessments, student career direction, and clinical development. Former visiting faculty at IoBM, SZABIST, and NUML.",
-      phone: "0300-2778854",
+      phone: "+92 300 2778854",
       email: "razi@dsu.edu.pk",
       secondaryEmail: "razi_sultan@yahoo.com",
-      linkedin: "https://linkedin.com",
+      linkedin: "https://www.linkedin.com/in/dr-razi-sultan-siddiqui-phd-98b50a62?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     },
+       {
+  id: "psych-zarafshan",
+  name: "Zarafshan Sami",
+  title: "Senior Psychological Analyst",
+  subtitle:
+    "Associate Psychologist | MS Psychology | Certified Psychological Analyst",
+  image: zarafshanImg,
+  credentials: [
+    "MS Psychology",
+    "Certified Psychological Analyst",
+    "Passionate Mental Well-Being Practitioner",
+    "Strong academic foundation in psychology",
+    "Expert in administering scientifically proven personality assessment tests"
+  ],
+  experience:
+    "Zarafshan Sami is an Associate Psychologist and Senior Psychological Analyst with a strong academic background in psychology. She provides ethical, compassionate, and evidence-based psychological support, helping individuals understand their thoughts, emotions, and behaviors. She is also experienced in administering scientifically validated personality assessment tests to support personal growth, counselling, and psychological evaluation.",
+  phone: "+92 313 1268969",
+  email: "zarafshan.sami@dsu.edu.pk",
+  linkedin: "https://www.linkedin.com/in/ms-zarafshan-sami-140550426/",
+},
     {
       id: "ops-iftikhar",
       name: "Iftikhar Jawed",
@@ -94,6 +116,7 @@ export default function Team() {
       secondaryEmail: "xainulhassan98@gmail.com",
       linkedin: "https://linkedin.com/in/xain-ul-hassan-62b25a177",
     },
+ 
   ];
 
   return (
