@@ -10,7 +10,7 @@ export default function Interns() {
         <div className="rounded-3xl overflow-hidden shadow-xl ring-1 ring-slate-200">
           <div className="bg-slate-950 text-white px-6 py-10 sm:px-10 sm:py-14">
             <div className="max-w-4xl mx-auto text-center">
-              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-sky-400 mb-3">
+              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-green-400 mb-3">
                 We&apos;re hiring — internship program
               </p>
               <h2 className="text-3xl sm:text-4xl font-sans font-extrabold tracking-tight mb-3">

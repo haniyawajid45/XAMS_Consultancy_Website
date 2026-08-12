@@ -110,7 +110,7 @@ export default function RegistrationModal({ isOpen, onClose, type }: Registratio
             className="relative w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl bg-white shadow-2xl ring-1 ring-slate-200"
           >
             {/* Header decor band */}
-            <div className="h-2 bg-gradient-to-r from-blue-700 via-sky-500 to-indigo-800 sticky top-0 z-20" />
+            <div className="h-2 bg-gradient-to-r from-green-700 via-green-500 to-green-800 sticky top-0 z-20" />
 
             <button
               id="close-modal-btn"
@@ -141,8 +141,8 @@ export default function RegistrationModal({ isOpen, onClose, type }: Registratio
 
                   {type === "counselling" ? (
                     <div className="space-y-4 sm:space-y-6 pt-2">
-                      <div className="p-3.5 sm:p-4 bg-blue-50 border border-blue-200 rounded-xl">
-                        <p className="text-xs text-blue-800 leading-relaxed">
+                      <div className="p-3.5 sm:p-4 bg-green-50 border border-green-200 rounded-xl">
+                        <p className="text-xs text-green-800 leading-relaxed">
                           To offer you a more secure, streamlined process for scheduling career counselling and organizing professional assessments, we've transitioned to Google Forms. 
                         </p>
                       </div>
@@ -151,7 +151,7 @@ export default function RegistrationModal({ isOpen, onClose, type }: Registratio
                         href="https://forms.gle/5xWW6aTLYh6p7kSN6"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 active:scale-[0.98] text-white font-sans font-bold py-3.5 px-4 rounded-xl transition-all cursor-pointer shadow-md text-sm"
+                        className="w-full flex items-center justify-center gap-2 bg-green-700 hover:bg-green-800 active:scale-[0.98] text-white font-sans font-bold py-3.5 px-4 rounded-xl transition-all cursor-pointer shadow-md text-sm"
                         onClick={resetForm}
                       >
                         <Send className="h-4 w-4 shrink-0" />
@@ -172,7 +172,7 @@ export default function RegistrationModal({ isOpen, onClose, type }: Registratio
                             value={partnerForm.fullName}
                             onChange={(e) => setPartnerForm({ ...partnerForm, fullName: e.target.value })}
                             placeholder="e.g. Wing Commander (R) Tariq"
-                            className="w-full pl-10 pr-4 py-2.5 text-xs sm:text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+                            className="w-full pl-10 pr-4 py-2.5 text-xs sm:text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all"
                           />
                         </div>
                       </div>
@@ -190,7 +190,7 @@ export default function RegistrationModal({ isOpen, onClose, type }: Registratio
                               value={partnerForm.email}
                               onChange={(e) => setPartnerForm({ ...partnerForm, email: e.target.value })}
                               placeholder="tariq@example.com"
-                              className="w-full pl-10 pr-4 py-2.5 text-xs sm:text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+                              className="w-full pl-10 pr-4 py-2.5 text-xs sm:text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all"
                             />
                           </div>
                         </div>
@@ -207,7 +207,7 @@ export default function RegistrationModal({ isOpen, onClose, type }: Registratio
                               value={partnerForm.phone}
                               onChange={(e) => setPartnerForm({ ...partnerForm, phone: e.target.value })}
                               placeholder="+92 321 9876543"
-                              className="w-full pl-10 pr-4 py-2.5 text-xs sm:text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+                              className="w-full pl-10 pr-4 py-2.5 text-xs sm:text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all"
                             />
                           </div>
                         </div>
@@ -226,7 +226,7 @@ export default function RegistrationModal({ isOpen, onClose, type }: Registratio
                               value={partnerForm.expertArea}
                               onChange={(e) => setPartnerForm({ ...partnerForm, expertArea: e.target.value })}
                               placeholder="e.g. ISO 9001, AS9100, EASA Part 145"
-                              className="w-full pl-10 pr-4 py-2.5 text-xs sm:text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+                              className="w-full pl-10 pr-4 py-2.5 text-xs sm:text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all"
                             />
                           </div>
                         </div>
@@ -242,7 +242,7 @@ export default function RegistrationModal({ isOpen, onClose, type }: Registratio
                             required
                             value={partnerForm.yearsOfExperience}
                             onChange={(e) => setPartnerForm({ ...partnerForm, yearsOfExperience: parseInt(e.target.value) || 5 })}
-                            className="w-full px-3 py-2.5 text-xs sm:text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+                            className="w-full px-3 py-2.5 text-xs sm:text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all"
                           />
                         </div>
                       </div>
@@ -259,7 +259,7 @@ export default function RegistrationModal({ isOpen, onClose, type }: Registratio
                             value={partnerForm.certifications}
                             onChange={(e) => setPartnerForm({ ...partnerForm, certifications: e.target.value })}
                             placeholder="e.g. IRCA ISO 9001 Lead Auditor, CAA Pakistan approval"
-                            className="w-full pl-10 pr-4 py-2.5 text-xs sm:text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+                            className="w-full pl-10 pr-4 py-2.5 text-xs sm:text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all"
                           />
                         </div>
                       </div>
@@ -273,7 +273,7 @@ export default function RegistrationModal({ isOpen, onClose, type }: Registratio
                           value={partnerForm.message}
                           onChange={(e) => setPartnerForm({ ...partnerForm, message: e.target.value })}
                           placeholder="List any past AMO or aviation military squadron training..."
-                          className="w-full p-3 text-xs sm:text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all resize-none"
+                          className="w-full p-3 text-xs sm:text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all resize-none"
                         />
                       </div>
 

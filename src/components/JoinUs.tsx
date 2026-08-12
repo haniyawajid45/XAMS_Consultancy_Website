@@ -16,9 +16,9 @@ export default function JoinUs() {
       category: "Career Guidance & Psychology",
       badge: "Open Position",
       icon: GraduationCap,
-      color: "from-blue-600 to-indigo-700",
-      accentBg: "bg-blue-50 text-blue-700 border-blue-200",
-      iconBg: "bg-blue-100 text-blue-700",
+      color: "from-green-600 to-green-700",
+      accentBg: "bg-green-50 text-green-700 border-green-200",
+      iconBg: "bg-green-100 text-green-700",
       description:
         "We are looking for experienced career counsellors to join our team and help us guide students towards their ideal career paths. If you are passionate about helping others reach their full potential and have a background in career guidance through psychological assessments, please apply through the link below.",
       highlights: [
@@ -54,9 +54,9 @@ export default function JoinUs() {
       category: "Campus Outreach & Assessment",
       badge: "Open Position",
       icon: UserPlus,
-      color: "from-sky-600 to-cyan-700",
-      accentBg: "bg-sky-50 text-sky-700 border-sky-200",
-      iconBg: "bg-sky-100 text-sky-700",
+      color: "from-green-600 to-cyan-700",
+      accentBg: "bg-green-50 text-green-700 border-green-200",
+      iconBg: "bg-green-100 text-green-700",
       description:
         "Join XAMS Consultancy as an internship candidate to support campus outreach, student assessment delivery, and career counselling preparation. Apply now to gain hands-on experience and mentorship.",
       highlights: [
@@ -77,14 +77,14 @@ export default function JoinUs() {
   return (
     <section id="join-us" className="py-12 sm:py-16 lg:py-20 bg-slate-900 text-white relative overflow-hidden">
       {/* Background glow accents */}
-      <div className="absolute top-0 right-1/3 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl z-0 pointer-events-none" />
+      <div className="absolute top-0 right-1/3 w-96 h-96 bg-green-600/10 rounded-full blur-3xl z-0 pointer-events-none" />
       <div className="absolute bottom-0 left-1/3 w-96 h-96 bg-emerald-600/10 rounded-full blur-3xl z-0 pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-2.5 sm:space-y-3 mb-8 sm:mb-12">
-          <span className="text-[11px] sm:text-xs font-mono font-bold text-sky-400 uppercase tracking-widest bg-sky-950/80 border border-sky-800/60 px-3 sm:px-3.5 py-1.5 rounded-full inline-flex items-center gap-1.5">
-            <UserPlus className="h-3.5 w-3.5 text-sky-400 shrink-0" />
+          <span className="text-[11px] sm:text-xs font-mono font-bold text-green-400 uppercase tracking-widest bg-green-950/80 border border-green-800/60 px-3 sm:px-3.5 py-1.5 rounded-full inline-flex items-center gap-1.5">
+            <UserPlus className="h-3.5 w-3.5 text-green-400 shrink-0" />
             <span>Careers &amp; Talent Pool</span>
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-sans font-extrabold text-white tracking-tight">
@@ -103,7 +103,7 @@ export default function JoinUs() {
               onClick={() => setActiveTab("all")}
               className={`whitespace-nowrap px-3.5 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-sans font-semibold rounded-xl transition-all cursor-pointer flex items-center gap-1.5 sm:gap-2 shrink-0 ${
                 activeTab === "all"
-                  ? "bg-blue-600 text-white shadow-md"
+                  ? "bg-green-600 text-white shadow-md"
                   : "text-slate-400 hover:text-white hover:bg-slate-900"
               }`}
             >
@@ -116,7 +116,7 @@ export default function JoinUs() {
               onClick={() => setActiveTab("counsellor")}
               className={`whitespace-nowrap px-3.5 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-sans font-semibold rounded-xl transition-all cursor-pointer flex items-center gap-1.5 sm:gap-2 shrink-0 ${
                 activeTab === "counsellor"
-                  ? "bg-blue-600 text-white shadow-md"
+                  ? "bg-green-600 text-white shadow-md"
                   : "text-slate-400 hover:text-white hover:bg-slate-900"
               }`}
             >
@@ -142,7 +142,7 @@ export default function JoinUs() {
               onClick={() => setActiveTab("internship")}
               className={`whitespace-nowrap px-3.5 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-sans font-semibold rounded-xl transition-all cursor-pointer flex items-center gap-1.5 sm:gap-2 shrink-0 ${
                 activeTab === "internship"
-                  ? "bg-sky-600 text-white shadow-md"
+                  ? "bg-green-600 text-white shadow-md"
                   : "text-slate-400 hover:text-white hover:bg-slate-900"
               }`}
             >
@@ -197,7 +197,7 @@ export default function JoinUs() {
                     <ul className="space-y-1.5 sm:space-y-2">
                       {op.highlights.map((item, idx) => (
                         <li key={idx} className="flex items-start gap-2 sm:gap-2.5 text-xs sm:text-sm text-slate-300 font-sans">
-                          <CheckCircle2 className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-sky-400 shrink-0 mt-0.5" />
+                          <CheckCircle2 className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-green-400 shrink-0 mt-0.5" />
                           <span>{item}</span>
                         </li>
                       ))}

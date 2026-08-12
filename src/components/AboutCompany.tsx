@@ -35,7 +35,7 @@ export default function AboutCompany() {
           <div className="lg:col-span-5 space-y-4 sm:space-y-6">
             <div className="relative group">
               {/* Blueprint styling frame */}
-              <div className="absolute -inset-3 bg-gradient-to-tr from-blue-600 to-indigo-800 rounded-3xl opacity-10 filter blur-xl group-hover:opacity-15 transition pointer-events-none" />
+              <div className="absolute -inset-3 bg-gradient-to-tr from-green-600 to-green-800 rounded-3xl opacity-10 filter blur-xl group-hover:opacity-15 transition pointer-events-none" />
               <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl shadow-lg border border-slate-200/80 aspect-[16/10] sm:aspect-[4/3] bg-slate-900">
                 <img
                   src={auditImage}
@@ -44,7 +44,7 @@ export default function AboutCompany() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 {/* Technical readout Overlay on Image hover */}
-                <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-slate-900/90 text-sky-400 text-[9px] sm:text-[10px] font-mono py-1 px-2 sm:px-2.5 rounded border border-slate-800">
+                <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-slate-900/90 text-green-400 text-[9px] sm:text-[10px] font-mono py-1 px-2 sm:px-2.5 rounded border border-slate-800">
                   ISO SEC-145 // ACTIVE AUDIT
                 </div>
               </div>
@@ -52,7 +52,7 @@ export default function AboutCompany() {
 
             {/* Core Companion Concepts Box for Quality Assurance branding */}
             <div className="bg-gradient-to-b from-slate-900 to-slate-950 text-white rounded-2xl p-4 sm:p-6 border border-slate-850 shadow-md space-y-3 sm:space-y-4">
-              <span className="text-[10px] uppercase font-mono tracking-widest text-blue-400 font-semibold block">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-green-400 font-semibold block">
                 Standard Frameworks
               </span>
               <h3 className="text-sm sm:text-base font-sans font-bold text-white tracking-tight border-b border-slate-800 pb-2">
@@ -66,7 +66,7 @@ export default function AboutCompany() {
                   { title: "Quality Assurance Organizational Hierarchy", desc: "Certified responsibility matrices on corporate scales" }
                 ].map((concept, idx) => (
                   <div key={idx} className="flex gap-2.5 items-start text-xs text-slate-300">
-                    <div className="h-5 w-5 rounded-full bg-blue-900/50 border border-blue-500/30 text-blue-400 flex items-center justify-center font-mono font-bold shrink-0 text-[10px]">
+                    <div className="h-5 w-5 rounded-full bg-green-900/50 border border-green-500/30 text-green-400 flex items-center justify-center font-mono font-bold shrink-0 text-[10px]">
                       {idx + 1}
                     </div>
                     <div>
@@ -81,7 +81,7 @@ export default function AboutCompany() {
 
           {/* Bullet Services Column */}
           <div className="lg:col-span-7 space-y-4 sm:space-y-6">
-            <span className="text-[11px] sm:text-xs font-mono font-bold text-blue-700 uppercase tracking-widest bg-blue-50 px-3 sm:px-3.5 py-1.5 rounded-full inline-block">
+            <span className="text-[11px] sm:text-xs font-mono font-bold text-green-700 uppercase tracking-widest bg-green-50 px-3 sm:px-3.5 py-1.5 rounded-full inline-block">
               Integrated Capabilities
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-sans font-extrabold text-slate-900 tracking-tight">
@@ -114,8 +114,8 @@ export default function AboutCompany() {
                   desc: "Prepare comprehensive compliance audits of an Air Operator’s aircraft maintenance control or a maintenance organization’s internal quality/compliance management and tracking programs to ensure all OEM and regulatory requirements are appropriately incorporated."
                 }
               ].map((service, idx) => (
-                <div key={idx} className="flex gap-3 sm:gap-3.5 items-start p-3.5 sm:p-4 bg-white border border-slate-100 rounded-xl sm:rounded-2xl hover:border-blue-400 hover:shadow-sm transition-all duration-300">
-                  <div className="flex h-5 w-5 sm:h-6 sm:w-6 shrink-0 items-center justify-center rounded-full bg-blue-50 text-blue-700 mt-0.5">
+                <div key={idx} className="flex gap-3 sm:gap-3.5 items-start p-3.5 sm:p-4 bg-white border border-slate-100 rounded-xl sm:rounded-2xl hover:border-green-400 hover:shadow-sm transition-all duration-300">
+                  <div className="flex h-5 w-5 sm:h-6 sm:w-6 shrink-0 items-center justify-center rounded-full bg-green-50 text-green-700 mt-0.5">
                     <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                   </div>
                   <div>
@@ -139,7 +139,7 @@ export default function AboutCompany() {
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center relative z-10">
               <div className="lg:col-span-5 space-y-3 sm:space-y-4">
-                <span className="text-[11px] sm:text-xs font-mono font-bold text-blue-400 bg-blue-900/40 border border-blue-700/50 px-3 sm:px-3.5 py-1.5 rounded-full inline-block">
+                <span className="text-[11px] sm:text-xs font-mono font-bold text-green-400 bg-green-900/40 border border-green-700/50 px-3 sm:px-3.5 py-1.5 rounded-full inline-block">
                   Defense-Grade Heritage
                 </span>
                 <h3 className="text-xl sm:text-2xl lg:text-3xl font-sans font-extrabold tracking-tight">
@@ -160,7 +160,7 @@ export default function AboutCompany() {
                     "Approved Maintenance Organizations (AMO’s) with experience with large and small propeller and jet powered, fixed and rotary wing aircraft including commuter aircraft."
                   ].map((origin, idx) => (
                     <div key={idx} className="p-3 sm:p-3.5 bg-slate-950 rounded-xl sm:rounded-2xl border border-slate-800/80 flex gap-3 items-start h-full">
-                      <History className="h-4 w-4 sm:h-5 sm:w-5 text-blue-400 shrink-0 mt-0.5" />
+                      <History className="h-4 w-4 sm:h-5 sm:w-5 text-green-400 shrink-0 mt-0.5" />
                       <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans">{origin}</p>
                     </div>
                   ))}
@@ -176,7 +176,7 @@ export default function AboutCompany() {
         <div className="max-w-7xl mx-auto px-4">
           {/* Heading */}
           <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
-            <span className="text-[11px] sm:text-xs font-mono font-bold text-blue-700 uppercase tracking-widest bg-blue-50 px-3 sm:px-3.5 py-1.5 rounded-full inline-block mb-3">
+            <span className="text-[11px] sm:text-xs font-mono font-bold text-green-700 uppercase tracking-widest bg-green-50 px-3 sm:px-3.5 py-1.5 rounded-full inline-block mb-3">
               Competitive Advantage
             </span>
             <h2 className="text-2xl sm:text-3xl font-sans font-extrabold text-slate-900 tracking-tight">
@@ -194,7 +194,7 @@ export default function AboutCompany() {
                 key={idx}
                 className="bg-white border border-slate-200 p-5 sm:p-6 rounded-2xl shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1"
               >
-                <div className="h-9 w-9 sm:h-10 sm:w-10 flex items-center justify-center rounded-xl bg-blue-50 text-blue-700 font-sans font-bold text-xs sm:text-sm mb-3 sm:mb-4">
+                <div className="h-9 w-9 sm:h-10 sm:w-10 flex items-center justify-center rounded-xl bg-green-50 text-green-700 font-sans font-bold text-xs sm:text-sm mb-3 sm:mb-4">
                   {`0${idx + 1}`}
                 </div>
                 <h4 className="text-sm sm:text-base font-sans font-bold text-slate-900 tracking-tight mb-2">
@@ -215,7 +215,7 @@ export default function AboutCompany() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             {/* Context */}
             <div className="lg:col-span-4 space-y-2 sm:space-y-4">
-              <span className="text-[11px] sm:text-xs font-mono font-bold text-blue-700 uppercase tracking-widest bg-blue-50 px-3 sm:px-3.5 py-1.5 rounded-full inline-block">
+              <span className="text-[11px] sm:text-xs font-mono font-bold text-green-700 uppercase tracking-widest bg-green-50 px-3 sm:px-3.5 py-1.5 rounded-full inline-block">
                 Locations
               </span>
               <h2 className="text-2xl sm:text-3xl font-sans font-extrabold text-slate-900 tracking-tight">
@@ -226,12 +226,12 @@ export default function AboutCompany() {
             {/* Pakistan Location Cards */}
             <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6" id="locations-cards">
               {/* Islamabad hub */}
-              <div className="bg-slate-50 border border-slate-100 p-5 sm:p-6 rounded-2xl relative overflow-hidden group hover:border-blue-600 transition duration-300">
+              <div className="bg-slate-50 border border-slate-100 p-5 sm:p-6 rounded-2xl relative overflow-hidden group hover:border-green-600 transition duration-300">
                 <div className="flex justify-between items-start mb-3 sm:mb-4">
-                  <div className="p-2.5 sm:p-3 bg-white text-blue-700 rounded-xl shadow-sm">
+                  <div className="p-2.5 sm:p-3 bg-white text-green-700 rounded-xl shadow-sm">
                     <MapPin className="h-4 w-4 sm:h-5 sm:w-5" />
                   </div>
-                  <span className="text-[10px] font-mono bg-blue-50 text-blue-800 py-0.5 px-2 rounded-full font-bold">
+                  <span className="text-[10px] font-mono bg-green-50 text-green-800 py-0.5 px-2 rounded-full font-bold">
                     ISLAMABAD
                   </span>
                 </div>
@@ -240,15 +240,15 @@ export default function AboutCompany() {
                   Abu Dhabi Towers, F-11/1, Islamabad, Pakistan.
                 </p>
                 <div className="mt-3 sm:mt-4 pt-3 sm:pt-4 border-t border-slate-200/60 text-xs font-mono text-slate-500 flex flex-col gap-0.5 sm:gap-1">
-                  <span>HOTLINE: 03200551376</span>
+                  <span>HOTLINE: +923200551376</span>
                   <span className="text-[10px]">EMAIL: xamconsultancy@gmail.com</span>
                 </div>
               </div>
 
               {/* Karachi hub */}
-              <div className="bg-slate-50 border border-slate-100 p-5 sm:p-6 rounded-2xl relative overflow-hidden group hover:border-blue-600 transition duration-300">
+              <div className="bg-slate-50 border border-slate-100 p-5 sm:p-6 rounded-2xl relative overflow-hidden group hover:border-green-600 transition duration-300">
                 <div className="flex justify-between items-start mb-3 sm:mb-4">
-                  <div className="p-2.5 sm:p-3 bg-white text-blue-700 rounded-xl shadow-sm">
+                  <div className="p-2.5 sm:p-3 bg-white text-green-700 rounded-xl shadow-sm">
                     <MapPin className="h-4 w-4 sm:h-5 sm:w-5" />
                   </div>
                   <span className="text-[10px] font-mono bg-emerald-50 text-emerald-800 py-0.5 px-2 rounded-full font-bold">
@@ -260,18 +260,18 @@ export default function AboutCompany() {
                   Room No 217, DHA Suffa University, Karachi, Pakistan.
                 </p>
                 <div className="mt-3 sm:mt-4 pt-3 sm:pt-4 border-t border-slate-200/60 text-xs font-mono text-slate-500 flex flex-col gap-0.5 sm:gap-1">
-                  <span>HOTLINE: 03200551376</span>
+                  <span>HOTLINE: +923200551376</span>
                   <span className="text-[10px]">EMAIL: xamconsultancy@gmail.com</span>
                 </div>
               </div>
 
               {/* Rawalpindi hub */}
-              <div className="bg-slate-50 border border-slate-100 p-5 sm:p-6 rounded-2xl relative overflow-hidden group hover:border-blue-600 transition duration-300">
+              <div className="bg-slate-50 border border-slate-100 p-5 sm:p-6 rounded-2xl relative overflow-hidden group hover:border-green-600 transition duration-300">
                 <div className="flex justify-between items-start mb-3 sm:mb-4">
-                  <div className="p-2.5 sm:p-3 bg-white text-blue-700 rounded-xl shadow-sm">
+                  <div className="p-2.5 sm:p-3 bg-white text-green-700 rounded-xl shadow-sm">
                     <MapPin className="h-4 w-4 sm:h-5 sm:w-5" />
                   </div>
-                  <span className="text-[10px] font-mono bg-indigo-50 text-indigo-800 py-0.5 px-2 rounded-full font-bold">
+                  <span className="text-[10px] font-mono bg-green-50 text-green-800 py-0.5 px-2 rounded-full font-bold">
                     RAWALPINDI
                   </span>
                 </div>
@@ -280,18 +280,18 @@ export default function AboutCompany() {
                   Rawalpindi, Pakistan.
                 </p>
                 <div className="mt-3 sm:mt-4 pt-3 sm:pt-4 border-t border-slate-200/60 text-xs font-mono text-slate-500 flex flex-col gap-0.5 sm:gap-1">
-                  <span>HOTLINE: 03200551376</span>
+                  <span>HOTLINE: +923200551376</span>
                   <span className="text-[10px]">EMAIL: xamconsultancy@gmail.com</span>
                 </div>
               </div>
 
               {/* Abbottabad hub */}
-              <div className="bg-slate-50 border border-slate-100 p-5 sm:p-6 rounded-2xl relative overflow-hidden group hover:border-blue-600 transition duration-300">
+              <div className="bg-slate-50 border border-slate-100 p-5 sm:p-6 rounded-2xl relative overflow-hidden group hover:border-green-600 transition duration-300">
                 <div className="flex justify-between items-start mb-3 sm:mb-4">
-                  <div className="p-2.5 sm:p-3 bg-white text-blue-700 rounded-xl shadow-sm">
+                  <div className="p-2.5 sm:p-3 bg-white text-green-700 rounded-xl shadow-sm">
                     <MapPin className="h-4 w-4 sm:h-5 sm:w-5" />
                   </div>
-                  <span className="text-[10px] font-mono bg-sky-50 text-sky-800 py-0.5 px-2 rounded-full font-bold">
+                  <span className="text-[10px] font-mono bg-green-50 text-green-800 py-0.5 px-2 rounded-full font-bold">
                     ABBOTTABAD
                   </span>
                 </div>
@@ -300,7 +300,7 @@ export default function AboutCompany() {
                   Abbottabad, Pakistan.
                 </p>
                 <div className="mt-3 sm:mt-4 pt-3 sm:pt-4 border-t border-slate-200/60 text-xs font-mono text-slate-500 flex flex-col gap-0.5 sm:gap-1">
-                  <span>HOTLINE: 03200551376</span>
+                  <span>HOTLINE: +923200551376</span>
                   <span className="text-[10px]">EMAIL: xamconsultancy@gmail.com</span>
                 </div>
               </div>

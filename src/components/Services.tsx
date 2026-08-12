@@ -110,7 +110,7 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
-          <span className="text-[11px] sm:text-xs font-mono font-bold text-blue-700 uppercase tracking-widest bg-blue-50 px-3 sm:px-3.5 py-1.5 rounded-full inline-block mb-3">
+          <span className="text-[11px] sm:text-xs font-mono font-bold text-green-700 uppercase tracking-widest bg-green-50 px-3 sm:px-3.5 py-1.5 rounded-full inline-block mb-3">
             Core Service Matrix
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-sans font-extrabold text-slate-900 tracking-tight">
@@ -150,7 +150,7 @@ export default function Services() {
               placeholder="Filter services..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full bg-white border border-slate-200 rounded-xl pl-9 pr-4 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all shadow-sm"
+              className="w-full bg-white border border-slate-200 rounded-xl pl-9 pr-4 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all shadow-sm"
             />
           </div>
         </div>
@@ -168,15 +168,15 @@ export default function Services() {
                 >
                   <div>
                     {/* Icon container */}
-                    <div className="mb-4 sm:mb-5 inline-flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-700 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-inner">
+                    <div className="mb-4 sm:mb-5 inline-flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-xl bg-green-50 text-green-700 group-hover:bg-green-600 group-hover:text-white transition-all duration-300 shadow-inner">
                       <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
                     </div>
 
-                    <span className="block text-[10px] uppercase font-mono tracking-widest text-blue-500 font-semibold mb-1">
+                    <span className="block text-[10px] uppercase font-mono tracking-widest text-green-500 font-semibold mb-1">
                       {service.category}
                     </span>
 
-                    <h3 className="text-sm sm:text-base font-sans font-bold text-slate-900 group-hover:text-blue-700 tracking-tight transition-colors mb-2.5 sm:mb-3 min-h-0 sm:min-h-[3.5rem] line-clamp-3">
+                    <h3 className="text-sm sm:text-base font-sans font-bold text-slate-900 group-hover:text-green-700 tracking-tight transition-colors mb-2.5 sm:mb-3 min-h-0 sm:min-h-[3.5rem] line-clamp-3">
                       {service.title}
                     </h3>
 
@@ -185,10 +185,6 @@ export default function Services() {
                     </p>
                   </div>
 
-                  <div className="flex items-center gap-1 text-xs font-semibold text-slate-400 group-hover:text-blue-700 transition-all pt-2 border-t sm:border-t-0 border-slate-100">
-                    <span>Explore scope</span>
-                    <ArrowRight className="h-3 w-3 transform group-hover:translate-x-1 transition-transform" />
-                  </div>
                 </div>
               );
             })

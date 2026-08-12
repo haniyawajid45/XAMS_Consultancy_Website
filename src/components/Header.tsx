@@ -30,8 +30,8 @@ import {
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const contactEmail = "xamconsultancy@gmail.com";
-  const contactPhone = "03200551376";
+  const contactEmail = "xamsconsultancy@gmail.com";
+  const contactPhone = "+923200551376";
 
   // Lock background scroll when mobile menu drawer is expanded
   useEffect(() => {
@@ -50,11 +50,11 @@ export default function Header() {
 
   // Social URLs or action handlers
   const socials = [
-    { name: "Facebook", icon: Facebook, url: "https://www.facebook.com/people/XAM-Consultancy/100071605470266/#", color: "hover:text-blue-600" },
+    { name: "Facebook", icon: Facebook, url: "https://www.facebook.com/people/XAM-Consultancy/100071605470266/#", color: "hover:text-green-600" },
     { name: "Instagram", icon: Instagram, url: "https://www.instagram.com/xamconsultancy/", color: "hover:text-pink-600" },
-    { name: "LinkedIn", icon: Linkedin, url: "https://www.linkedin.com/company/xamsconsultancy/", color: "hover:text-blue-700" },
+    { name: "LinkedIn", icon: Linkedin, url: "https://www.linkedin.com/company/xamsconsultancy/", color: "hover:text-green-700" },
     { name: "WhatsApp", icon: MessageCircle, url: "https://wa.me/923200551376", color: "hover:text-emerald-500" },
-    { name: "Telegram", icon: Send, url: "https://t.me/xamconsultancy", color: "hover:text-sky-500" }
+    { name: "Telegram", icon: Send, url: "https://t.me/xamconsultancy", color: "hover:text-green-500" }
   ];
 
   return (
@@ -69,7 +69,7 @@ export default function Header() {
               href={`mailto:${contactEmail}`}
               className="flex items-center gap-1.5 hover:text-white transition-colors"
             >
-              <Mail className="h-3.5 w-3.5 text-blue-400 shrink-0" />
+              <Mail className="h-3.5 w-3.5 text-green-400 shrink-0" />
               <span className="font-semibold break-all">{contactEmail}</span>
             </a>
             <span className="hidden sm:inline text-slate-700">|</span>
@@ -78,7 +78,7 @@ export default function Header() {
               href={`tel:${contactPhone}`}
               className="flex items-center gap-1.5 hover:text-white transition-colors font-semibold"
             >
-              <PhoneCall className="h-3.5 w-3.5 text-blue-400 shrink-0" />
+              <PhoneCall className="h-3.5 w-3.5 text-green-400 shrink-0" />
               <span>{contactPhone}</span>
             </a>
           </div>
@@ -86,7 +86,7 @@ export default function Header() {
           {/* Socials & Locations */}
           <div className="flex items-center gap-3 sm:gap-4 text-[11px]">
             <div className="hidden sm:flex items-center gap-1.5 text-slate-400 border-r border-slate-700 pr-4 mr-1">
-              <Globe className="h-3 w-3 text-sky-400 animate-pulse shrink-0" />
+              <Globe className="h-3 w-3 text-green-400 animate-pulse shrink-0" />
               <span>Islamabad, Karachi, Rawalpindi &amp; Abbottabad</span>
             </div>
             <div className="flex items-center gap-3">
@@ -134,7 +134,7 @@ export default function Header() {
             <a
               id="nav-link-home"
               href="#"
-              className="text-sm font-sans font-semibold text-slate-700 hover:text-blue-700 transition-colors tracking-wide"
+              className="text-sm font-sans font-semibold text-slate-700 hover:text-green-700 transition-colors tracking-wide"
             >
               Home
             </a>
@@ -142,11 +142,11 @@ export default function Header() {
             <a
               id="nav-link-join-us"
               href="#join-us"
-              className="text-sm font-sans font-semibold text-blue-700 hover:text-blue-900 transition-colors tracking-wide flex items-center gap-1.5 bg-blue-50 px-3 py-1 rounded-full border border-blue-200"
+              className="text-sm font-sans font-semibold text-green-700 hover:text-green-900 transition-colors tracking-wide flex items-center gap-1.5 bg-green-50 px-3 py-1 rounded-full border border-green-200"
             >
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-600"></span>
               </span>
               <span>Join Us</span>
             </a>
@@ -157,7 +157,7 @@ export default function Header() {
               href="https://forms.gle/5xWW6aTLYh6p7kSN6"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center justify-center bg-blue-700 text-white rounded-lg hover:bg-blue-800 font-sans font-semibold text-xs px-3.5 py-1.5 transition-all shadow-sm"
+              className="hidden sm:inline-flex items-center justify-center bg-green-700 text-white rounded-lg hover:bg-green-800 font-sans font-semibold text-xs px-3.5 py-1.5 transition-all shadow-sm"
             >
               Consultation Portal
             </a>
@@ -168,7 +168,7 @@ export default function Header() {
             id="mobile-menu-toggle"
             onClick={toggleMobileMenu}
             aria-label="Toggle Navigation Menu"
-            className="md:hidden flex items-center justify-center w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 active:scale-95 text-slate-900 transition-all focus:outline-none focus:ring-2 focus:ring-blue-600 shrink-0"
+            className="md:hidden flex items-center justify-center w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 active:scale-95 text-slate-900 transition-all focus:outline-none focus:ring-2 focus:ring-green-600 shrink-0"
           >
             {mobileMenuOpen ? (
               <X className="h-5 w-5 text-slate-900" />
@@ -200,10 +200,10 @@ export default function Header() {
                   id="mobile-nav-home"
                   href="#"
                   onClick={closeMobileMenu}
-                  className="flex items-center justify-between p-3 rounded-xl text-slate-800 hover:bg-blue-50 hover:text-blue-700 font-sans font-semibold text-sm transition-colors"
+                  className="flex items-center justify-between p-3 rounded-xl text-slate-800 hover:bg-green-50 hover:text-green-700 font-sans font-semibold text-sm transition-colors"
                 >
                   <div className="flex items-center gap-3">
-                    <Home className="h-4 w-4 text-blue-600" />
+                    <Home className="h-4 w-4 text-green-600" />
                     <span>Home</span>
                   </div>
                   <ChevronRight className="h-4 w-4 text-slate-400" />
@@ -213,10 +213,10 @@ export default function Header() {
                   id="mobile-nav-services"
                   href="#services-section"
                   onClick={closeMobileMenu}
-                  className="flex items-center justify-between p-3 rounded-xl text-slate-800 hover:bg-blue-50 hover:text-blue-700 font-sans font-semibold text-sm transition-colors"
+                  className="flex items-center justify-between p-3 rounded-xl text-slate-800 hover:bg-green-50 hover:text-green-700 font-sans font-semibold text-sm transition-colors"
                 >
                   <div className="flex items-center gap-3">
-                    <Briefcase className="h-4 w-4 text-blue-600" />
+                    <Briefcase className="h-4 w-4 text-green-600" />
                     <span>Services Matrix</span>
                   </div>
                   <ChevronRight className="h-4 w-4 text-slate-400" />
@@ -226,10 +226,10 @@ export default function Header() {
                   id="mobile-nav-mission"
                   href="#where-we-come-from"
                   onClick={closeMobileMenu}
-                  className="flex items-center justify-between p-3 rounded-xl text-slate-800 hover:bg-blue-50 hover:text-blue-700 font-sans font-semibold text-sm transition-colors"
+                  className="flex items-center justify-between p-3 rounded-xl text-slate-800 hover:bg-green-50 hover:text-green-700 font-sans font-semibold text-sm transition-colors"
                 >
                   <div className="flex items-center gap-3">
-                    <Target className="h-4 w-4 text-blue-600" />
+                    <Target className="h-4 w-4 text-green-600" />
                     <span>Mission &amp; Vision</span>
                   </div>
                   <ChevronRight className="h-4 w-4 text-slate-400" />
@@ -239,10 +239,10 @@ export default function Header() {
                   id="mobile-nav-team"
                   href="#team-section"
                   onClick={closeMobileMenu}
-                  className="flex items-center justify-between p-3 rounded-xl text-slate-800 hover:bg-blue-50 hover:text-blue-700 font-sans font-semibold text-sm transition-colors"
+                  className="flex items-center justify-between p-3 rounded-xl text-slate-800 hover:bg-green-50 hover:text-green-700 font-sans font-semibold text-sm transition-colors"
                 >
                   <div className="flex items-center gap-3">
-                    <Users className="h-4 w-4 text-blue-600" />
+                    <Users className="h-4 w-4 text-green-600" />
                     <span>Professional Team</span>
                   </div>
                   <ChevronRight className="h-4 w-4 text-slate-400" />
@@ -252,15 +252,15 @@ export default function Header() {
                   id="mobile-nav-join-us"
                   href="#join-us"
                   onClick={closeMobileMenu}
-                  className="flex items-center justify-between p-3 rounded-xl text-blue-700 bg-blue-50/80 font-sans font-semibold text-sm transition-colors"
+                  className="flex items-center justify-between p-3 rounded-xl text-green-700 bg-green-50/80 font-sans font-semibold text-sm transition-colors"
                 >
                   <div className="flex items-center gap-3">
-                    <UserPlus className="h-4 w-4 text-blue-600" />
+                    <UserPlus className="h-4 w-4 text-green-600" />
                     <span>Join Us / Careers</span>
                   </div>
                   <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-600"></span>
                   </span>
                 </a>
 
@@ -268,10 +268,10 @@ export default function Header() {
                   id="mobile-nav-about"
                   href="#about-us"
                   onClick={closeMobileMenu}
-                  className="flex items-center justify-between p-3 rounded-xl text-slate-800 hover:bg-blue-50 hover:text-blue-700 font-sans font-semibold text-sm transition-colors"
+                  className="flex items-center justify-between p-3 rounded-xl text-slate-800 hover:bg-green-50 hover:text-green-700 font-sans font-semibold text-sm transition-colors"
                 >
                   <div className="flex items-center gap-3">
-                    <Building className="h-4 w-4 text-blue-600" />
+                    <Building className="h-4 w-4 text-green-600" />
                     <span>Who We Are</span>
                   </div>
                   <ChevronRight className="h-4 w-4 text-slate-400" />
@@ -281,10 +281,10 @@ export default function Header() {
                   id="mobile-nav-locations"
                   href="#where-we-are"
                   onClick={closeMobileMenu}
-                  className="flex items-center justify-between p-3 rounded-xl text-slate-800 hover:bg-blue-50 hover:text-blue-700 font-sans font-semibold text-sm transition-colors"
+                  className="flex items-center justify-between p-3 rounded-xl text-slate-800 hover:bg-green-50 hover:text-green-700 font-sans font-semibold text-sm transition-colors"
                 >
                   <div className="flex items-center gap-3">
-                    <MapPin className="h-4 w-4 text-blue-600" />
+                    <MapPin className="h-4 w-4 text-green-600" />
                     <span>Our Locations</span>
                   </div>
                   <ChevronRight className="h-4 w-4 text-slate-400" />
@@ -299,7 +299,7 @@ export default function Header() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={closeMobileMenu}
-                  className="w-full flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 active:scale-[0.98] text-white rounded-xl font-sans font-bold text-sm py-3.5 px-4 shadow-md transition-all"
+                  className="w-full flex items-center justify-center gap-2 bg-green-700 hover:bg-green-800 active:scale-[0.98] text-white rounded-xl font-sans font-bold text-sm py-3.5 px-4 shadow-md transition-all"
                 >
                   <span>Consultation Portal</span>
                   <ExternalLink className="h-4 w-4" />
@@ -316,14 +316,14 @@ export default function Header() {
                     href={`tel:${contactPhone}`}
                     className="flex items-center justify-center gap-1.5 p-2.5 bg-slate-100 rounded-xl text-slate-800 font-semibold active:bg-slate-200 transition-colors"
                   >
-                    <PhoneCall className="h-3.5 w-3.5 text-blue-600 shrink-0" />
+                    <PhoneCall className="h-3.5 w-3.5 text-green-600 shrink-0" />
                     <span className="truncate">{contactPhone}</span>
                   </a>
                   <a
                     href={`mailto:${contactEmail}`}
                     className="flex items-center justify-center gap-1.5 p-2.5 bg-slate-100 rounded-xl text-slate-800 font-semibold active:bg-slate-200 transition-colors"
                   >
-                    <Mail className="h-3.5 w-3.5 text-blue-600 shrink-0" />
+                    <Mail className="h-3.5 w-3.5 text-green-600 shrink-0" />
                     <span className="truncate">Email Us</span>
                   </a>
                 </div>
@@ -337,7 +337,7 @@ export default function Header() {
                         href={social.url}
                         target="_blank"
                         rel="noopener noreferrer nofollow"
-                        className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-100 text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+                        className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-100 text-slate-600 hover:bg-green-50 hover:text-green-700 transition-colors"
                         title={social.name}
                       >
                         <Icon className="h-4 w-4" />

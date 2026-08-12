@@ -8,18 +8,18 @@ import { Mail, PhoneCall, Facebook, Instagram, Linkedin, MessageCircle, Send, Sh
 
 export default function Footer() {
   const email = "xamconsultancy@gmail.com";
-  const phone = "03200551376";
+  const phone = "+923200551376";
 
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const socials = [
-    { name: "Facebook", icon: Facebook, url: "https://www.facebook.com/people/XAM-Consultancy/100071605470266/#", color: "hover:bg-blue-600 hover:text-white" },
+    { name: "Facebook", icon: Facebook, url: "https://www.facebook.com/people/XAM-Consultancy/100071605470266/#", color: "hover:bg-green-600 hover:text-white" },
     { name: "Instagram", icon: Instagram, url: "https://www.instagram.com/xamconsultancy/", color: "hover:bg-pink-600 hover:text-white" },
-    { name: "LinkedIn", icon: Linkedin, url: "https://www.linkedin.com/company/xamsconsultancy/", color: "hover:bg-blue-700 hover:text-white" },
+    { name: "LinkedIn", icon: Linkedin, url: "https://www.linkedin.com/company/xamsconsultancy/", color: "hover:bg-green-700 hover:text-white" },
     { name: "WhatsApp", icon: MessageCircle, url: "https://wa.me/923200551376", color: "hover:bg-emerald-500 hover:text-white" },
-    { name: "Telegram", icon: Send, url: "https://t.me/xamconsultancy", color: "hover:bg-sky-500 hover:text-white" }
+    { name: "Telegram", icon: Send, url: "https://t.me/xamconsultancy", color: "hover:bg-green-500 hover:text-white" }
   ];
 
   const quickLinks = [
@@ -37,7 +37,7 @@ export default function Footer() {
         <button
           id="scroll-to-top-btn"
           onClick={handleScrollToTop}
-          className="flex items-center justify-center h-10 w-10 bg-blue-700 hover:bg-blue-800 text-white rounded-full transition shadow-lg border border-blue-600 cursor-pointer"
+          className="flex items-center justify-center h-10 w-10 bg-green-700 hover:bg-green-800 text-white rounded-full transition shadow-lg border border-green-600 cursor-pointer"
           title="Scroll to Top"
         >
           <ArrowUp className="h-5 w-5" />
@@ -90,7 +90,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="hover:text-blue-400 transition duration-200 block py-0.5"
+                    className="hover:text-green-400 transition duration-200 block py-0.5"
                   >
                     {link.label}
                   </a>
@@ -110,7 +110,7 @@ export default function Footer() {
                 href={`tel:${phone}`}
                 className="flex items-center gap-3 text-xs sm:text-sm text-slate-300 hover:text-white transition py-0.5"
               >
-                <PhoneCall className="h-4 w-4 text-blue-500 shrink-0" />
+                <PhoneCall className="h-4 w-4 text-green-500 shrink-0" />
                 <span>{phone}</span>
               </a>
               <div className="border-t border-slate-800/80 my-1.5 sm:my-2" />
@@ -119,7 +119,7 @@ export default function Footer() {
                 href={`mailto:${email}`}
                 className="flex items-center gap-3 text-xs sm:text-sm text-slate-300 hover:text-white transition py-0.5"
               >
-                <Mail className="h-4 w-4 text-blue-500 shrink-0" />
+                <Mail className="h-4 w-4 text-green-500 shrink-0" />
                 <span className="font-semibold break-all text-[11px] sm:text-xs">{email}</span>
               </a>
               <div className="flex items-start gap-3 text-[11px] sm:text-xs text-slate-400 pt-1">
