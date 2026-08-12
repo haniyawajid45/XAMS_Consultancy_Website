@@ -205,7 +205,7 @@ xam-consultancy-website/
 
 ---
 # 🛠 Screenshot
-<img width="1965" height="12712" alt="image" src="https://github.com/user-attachments/assets/4c0c4bb7-c2e1-45ab-a400-236060367b86" />
+<img width="1747" height="16300" alt="image" src="https://github.com/user-attachments/assets/f8caea21-75e7-45ef-a56b-efc8bc949604" />
 
 # 🛠 Developer Setup & Execution Guide
 
